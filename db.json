@@ -1,14 +1,6 @@
 {
   "tshirts": [
     {
-      "id": "1212",
-      "title": "title name",
-      "brand": "brand name",
-      "price": "13441",
-      "description": "descriptionname",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCW-nkBEcpnvq949xPiTPjvpiTSLUG8q02A&s"
-    },
-    {
       "id": "242424",
       "title": "faf",
       "brand": "H&m",
