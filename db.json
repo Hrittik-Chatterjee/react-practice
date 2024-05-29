@@ -1,3 +1,20 @@
 {
-  "shoes": []
+  "tshirts": [
+    {
+      "id": "1212",
+      "title": "title name",
+      "brand": "brand name",
+      "price": "13441",
+      "description": "descriptionname",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCW-nkBEcpnvq949xPiTPjvpiTSLUG8q02A&s"
+    },
+    {
+      "id": "242424",
+      "title": "faf",
+      "brand": "H&m",
+      "price": "4224",
+      "description": "Loose fit printent t shirt",
+      "image_url": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fbc%2Fa9%2Fbca97104eb98ebb5831f761e8eb51fb4930fdd62.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
+    }
+  ]
 }

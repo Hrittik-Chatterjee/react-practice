@@ -10,8 +10,8 @@ const Products = ({ data }) => {
       <div className="flex gap-2 px-6 justify-center items-center ">
         {
           // eslint-disable-next-line react/prop-types
-          data.slice(0, 3).map((shoe) => (
-            <SingleProduct key={shoe.id} shoe={shoe} />
+          data.slice(0, 3).map((tshirt) => (
+            <SingleProduct key={tshirt.id} tshirt={tshirt} />
           ))
         }
       </div>

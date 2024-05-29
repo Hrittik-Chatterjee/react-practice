@@ -65,7 +65,7 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Clothing</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -96,16 +96,18 @@ const Navbar = () => {
         {user && (
           <button
             onClick={handleLogout}
-            className="btn bg-red-500 text-white hidden lg:block"
+            className="btn btn-sm bg-red-500 text-white hidden lg:block"
           >
             Logout
           </button>
         )}
-        <div className="avatar">
-          <div className="w-12 rounded-full border-2 border-black">
-            <img src={user?.photoURL || "/public/placeholder.jpg"} />
+        {user && (
+          <div className="avatar">
+            <div className="w-12 rounded-full border-2 border-black">
+              <img src={user?.photoURL || "/public/placeholder.jpg"} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -1,23 +1,18 @@
-const About = () => {
+import useAuth from "../hooks/useAuth";
+
+const Dashboard = () => {
+  const { user } = useAuth();
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-          className="max-w-sm rounded-lg shadow-2xl"
-        />
-        <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
+    <div>
+      <div className="avatar">
+        <div className="w-12 rounded-full border-2 border-black">
+          <img src={user?.photoURL || "/public/placeholder.jpg"} />
         </div>
       </div>
+      <h1>{user?.displayName || "Username"}</h1>
+      <p>{user?.email}</p>
     </div>
   );
 };
 
-export default About;
+export default Dashboard;

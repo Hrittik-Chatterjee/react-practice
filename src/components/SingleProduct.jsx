@@ -2,13 +2,17 @@
 
 import { Link } from "react-router-dom";
 
-const SingleProduct = ({ shoe }) => {
-  const { id, title, brand, price, description, image_url } = shoe;
+const SingleProduct = ({ tshirt }) => {
+  const { id, title, brand, price, description, image_url } = tshirt;
 
   return (
     <div className="card w-96  h-4/5 bg-base-100 shadow-xl">
       <figure className="relative w-full">
-        <img src={image_url} alt="Shoes" className="h-72 w-full object-fill" />
+        <img
+          src={image_url}
+          alt="tshirts"
+          className="h-72 w-full object-fill"
+        />
       </figure>
       <div className="card-body flex flex-col justify-between">
         <div>

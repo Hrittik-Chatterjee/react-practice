@@ -1,9 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
-  const shoe = useLoaderData();
+  const tshirt = useLoaderData();
 
-  const { brand, description, image_url, price, title } = shoe;
+  const { brand, description, image_url, price, title } = tshirt;
 
   return (
     <div>

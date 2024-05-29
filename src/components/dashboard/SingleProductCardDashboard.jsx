@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const SingleProductCardDashboard = ({ shoe, onDelete }) => {
-  const { id, title, brand, price, description, image_url } = shoe;
+const SingleProductCardDashboard = ({ tshirt, onDelete }) => {
+  const { id, title, brand, price, description, image_url } = tshirt;
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:3000/shoes/${id}`, {
+    await fetch(`http://localhost:3000/tshirts/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -32,7 +32,11 @@ const SingleProductCardDashboard = ({ shoe, onDelete }) => {
     <div className="card w-96  h-4/5 bg-base-100 shadow-xl">
       <ToastContainer />
       <figure className="relative w-full">
-        <img src={image_url} alt="Shoes" className="h-72 w-full object-fill" />
+        <img
+          src={image_url}
+          alt="tshirts"
+          className="h-72 w-full object-fill"
+        />
       </figure>
       <div className="card-body flex flex-col justify-between">
         <div>
